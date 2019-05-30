@@ -5,22 +5,22 @@
 Simply answer these conceptual questions:
 
 - What is the main advantage of using user-defined functions in the code?
-  [] - The program executes faster
-  [] - The code gets smaller
-  [] - You avoid code repetition
-  [] - You don't need types
+  - [ ] The program executes faster
+  - [ ] The code gets smaller
+  - [ ] You avoid code repetition
+  - [ ] You don't need types
 
 - What's the meaning of the term *high-level* for programming languages?
-  [] - That the language is difficult
-  [] - It is fast
-  [] - The language has a *high level* of abstraction
-  [] - You must have a *high level* computer to run it
+  - [ ] That the language is difficult
+  - [ ] It is fast
+  - [ ] The language has a *high level* of abstraction
+  - [ ] You must have a *high level* computer to run it
 
 - In python 3 you can load code from other files using which of the following:
-  [] - `requires`
-  [] - `import`
-  [] - `source`
-  [] - `include`
+  - [ ] `requires`
+  - [ ] `import`
+  - [ ] `source`
+  - [ ] `include`
 
 ## Part 2
 
