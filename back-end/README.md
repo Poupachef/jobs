@@ -31,6 +31,7 @@ In this folder you will find a csv file, *data.csv*, and you should create a pyt
 - extract packaging information from the product name with regex and put it in a new column
 - remove entries with missing information
 - add a column with the current date in UNIX time (seconds)
+- add the unitPrice column that contains the price of each component in the product, eg.: *CATCHUP HEINZ (CX 16 FR) - 160.00*, then the unitPrice is *10.00*
 
 ### Bonus points
 
