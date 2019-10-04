@@ -1,16 +1,18 @@
-# Poupachef - Winter is coming!
+# Poupachef
 
 ## Job description
-Here at Poupachef we are accepting winter interns to help us create a better company and transform the food service market in a more efficient and digital environment. Here we offer two job openings: back- and front-end, see the details below. The test results are to be sent to [pc@poupachef.com.br](pc@poupachef.com.br), until 2019-06-05.
+
+Here at Poupachef we are accepting developers to help us create a better company and transform the food service market in a more efficient and digital environment. Here we offer two job openings: one data scientist and one mobile developer, see the details below. The test results are to be sent by email which you'll find inside the application's folder.
 
 ### Benefits
- - Life ensurance
- - Valid internship hours
- - Possibility of variable $ based on your performance
+
+ - Competitive salary
+ - Possibility of variable $ or stock options based on performance
  - Contact with recent technologies such as *serverless*, *golang*, *kotlin* and *react*
 
-### Front-end
-The intern will be resposible for the development of our Client Portal with the help of our front-end development team.
+### Mobile developer
+
+The developer will be resposible for the development of our Android and iOS apps using React Native, participating through the whole deployment process.
 
 **Requirements:** Basic knowledge of HTML, CSS and Javascript.
 
@@ -22,22 +24,10 @@ The stack:
 - Webpack;
 - Yarn/NPM;
 
-### Back-end
-The back-end presents great opportunities of making improvements in our precious pricing algorithm, written in Python 3.7, and our price discovery and import routines, such as cleaning dirty data from our suppliers and reformatting them to fit perfectly on our database, or creating new web crawlers to discover the market price, thus enriching our knowledge about the price practices.
+### Data scientist
+
+The data scientist openning presents great opportunities of making improvements in our precious pricing algorithm, written in Python 3.7, and our price discovery and import routines, such as our serverless function that loads new data into the database, or creating new web crawlers to discover the market price, thus enriching our knowledge about the price practices.
 
 **Requirements:** Python
 
-## Entrance tests
-
-### Front-end
-Create a single HTML and CSS file with the following features:
-- Header with the Poupachef logo (can be found in the front-end folder);
-- Side menu that slides in and out of frame when pressing a button (try using CSS only);
-- A table with at least 4 columns, using data from any open API (we recommend the [Star Wars API](https://swapi.co/documentation));
-
-You are allowed to use any library for HTTP requests and DOM manipulation, such as **JQuery** or **Axios**.
-
-You are **not** allowed to use a CSS framework (Bootstrap, Materialize, etc...).
-
-### Back-end
-The test is simple and it's inside the back-end folder. Good luck!
+**Entrance test:** The test is simple and it's inside the `data-scientist` folder. Good luck!
