@@ -34,7 +34,7 @@ the next section to know how to return you solution to us.
 Before you start keep in mind these points:
 
 - Do not post you solution in any public means like GitHub, Medium
-article or broadcast that you are sending this sulution.
+article or broadcast that you are sending this solution.
 
 - Send the solution by email to [devs](mailto:devs@poupachef.com.br).
 
