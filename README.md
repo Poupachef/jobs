@@ -26,7 +26,7 @@ and willing to join our journey.
 For more information click on the position you're interested. And read
 the next section to know how to return you solution to us.
 
-- (Back-end developer)[back-end-developer.md]
+- [Back-end developer](back-end-developer.md)
 
 
 ### How to deliver the solution
@@ -36,7 +36,7 @@ Before you start keep in mind these points:
 - Do not post you solution in any public means like GitHub, Medium
 article or broadcast that you are sending this sulution.
 
-- Send the solution by email to (devs)[mailto:devs@poupachef.com.br].
+- Send the solution by email to [devs](mailto:devs@poupachef.com.br).
 
 - You should host you code in a public BitBucket repository for version
 control and send the link by email, do not broadcast this link as well.
