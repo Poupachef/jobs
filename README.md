@@ -44,6 +44,7 @@ control and send the link by email, do not broadcast this link as well.
 - You can send doubts/suggestions to the email before returning the final
 solution.
 
+- Within 7 days after receiving the link.
 
 ## Result
 
