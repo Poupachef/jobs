@@ -38,7 +38,7 @@ article or broadcast that you are sending this solution.
 
 - Send the solution by email to [devs](mailto:devs@poupachef.com.br).
 
-- You should host you code in a public BitBucket repository for version
+- You should host your code in a public BitBucket repository for version
 control and send the link by email, do not broadcast this link as well.
 
 - You can send doubts/suggestions to the email before returning the final
