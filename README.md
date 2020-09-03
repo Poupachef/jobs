@@ -21,7 +21,7 @@ and willing to join our journey.
  *kotlin* and *react*
 
 
-## Oppenings
+## Openings
 
 For more information click on the position you're interested. And read
 the next section to know how to return you solution to us.
