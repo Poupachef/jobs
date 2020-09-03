@@ -15,7 +15,7 @@ thinking in order to make the best and most scalable decisions.
 
 ## Coding test
 
-To attend to this positions you must deliver the two tests below.
+To attend to this position you must deliver **one** of the two tests below.
 
 
 ### Golang
@@ -67,6 +67,8 @@ one field different per type.
 ### Notes
 
 You should persist the data or part of the data received in a database of your choice.
+The final URL must be sent by email and the service must be running at the time we check
+it. A non working delivery will invalidate your candidacy.
 
 
 ### Good luck
