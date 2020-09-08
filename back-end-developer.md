@@ -18,7 +18,7 @@ thinking in order to make the best and most scalable decisions.
 To attend to this position you must deliver **one** of the two tests below.
 
 
-### Golang
+### 1 - Golang
 
 Create and deploy an AWS Lambda function using the AWS SAM toolkit and API Gateway
 with the following capabilities:
@@ -69,6 +69,44 @@ one field different per type.
 You should persist the data or part of the data received in a database of your choice.
 The final URL must be sent by email and the service must be running at the time we check
 it. A non working delivery will invalidate your candidacy.
+
+
+### 2 - Java
+
+You need to create a Rest API with Java version 1.8, Maven, Spring and MySql to store a list of products from different suppliers to be used in our app. 
+
+The supplier table must have this fields:
+```
+	- id
+	- name
+	- date of creation
+	- date of the last update
+```
+You don't need to create endpoints to manage suppliers. Just create the table and insert at least 3 records to be used in products end points.
+
+The product's fields are:
+```
+	- id
+	- name
+	- quantity in stock
+	- unit price
+	- supplier_id (reference to suppliers table)
+	- date of creation
+	- date of the last update
+```
+
+and the Api must have a complete CRUD of products with the following resources:
+```
+	- An endpoint to list all product;
+	- An endpoint to see just one product by 'id';
+	- An endpoint to insert a new product;
+	- An endpoint to update a product;
+	- An endpoint to delete a product;
+	- An endpoint to increase or decrease the quantity stock
+```
+
+You must delivery the database scritp, the Api source code and a way to use this Api, that could be a Postman Collection or a sequence of Curl commands.
+And create a Readme file to explain how to install and use the Api.
 
 
 ### Good luck
