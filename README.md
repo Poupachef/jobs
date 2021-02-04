@@ -24,7 +24,7 @@ and willing to join our journey.
 ## Openings
 
 For more information click on the position you're interested. And read
-the next section to know how to return you solution to us.
+the next section to know how to return your solution to us.
 
 - [Back-end developer](back-end-developer.md)
 
@@ -33,7 +33,7 @@ the next section to know how to return you solution to us.
 
 Before you start keep in mind these points:
 
-- Do not post you solution in any public means like GitHub, Medium
+- Do not post your solution in any public means like GitHub, Medium
 article or broadcast that you are sending this solution.
 
 - Send the solution by email to [devs](mailto:devs@poupachef.com.br).
