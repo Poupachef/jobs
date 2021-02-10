@@ -31,15 +31,7 @@ the next section to know how to return your solution to us.
 
 ### How to deliver the solution
 
-Before you start keep in mind these points:
-
-- Do not post your solution in any public means like GitHub, Medium
-article or broadcast that you are sending this solution.
-
-- Send the solution by email to [devs](mailto:devs@poupachef.com.br).
-
-- You should host your code in a public BitBucket repository for version
-control and send the link by email, do not broadcast this link as well.
+- Host your code in a public repository on GitHub and send the link by email to [devs](mailto:devs@poupachef.com.br).
 
 - You can send doubts/suggestions to the email before returning the final
 solution.
