@@ -26,7 +26,7 @@ and willing to join our journey.
 For more information click on the position you're interested. And read
 the next section to know how to return your solution to us.
 
-- [Back-end developer](back-end-developer.md)
+- [Front-end developer](frontend/frontend-developer.md)
 
 
 ### How to deliver the solution

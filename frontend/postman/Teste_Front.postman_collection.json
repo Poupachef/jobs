@@ -1,0 +1,347 @@
+{
+	"info": {
+		"_postman_id": "5db764d8-1ac7-4106-83aa-42241a50867a",
+		"name": "Teste Front",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GetToken",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "d57eb983-cc69-4f58-8716-20942d114d69",
+						"exec": [
+							"let resp = pm.response.stream.toJSON().data",
+							"let buff = new Buffer(resp, 'base64');",
+							"",
+							"let dataJson = JSON.parse(buff.toString());",
+							"pm.environment.set(\"accessToken\", dataJson.access_token);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "rest-api",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "grant_type",
+							"value": "password",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "ac@poupachef.com.br",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text"
+						}
+					],
+					"options": {
+						"formdata": {}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/oauth/token",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"oauth",
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetUser",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{accessToken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/users/{{userPublicId}}",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"users",
+						"{{userPublicId}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PostSupplier",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "8bfc2786-8432-4dbe-87cc-965459e7f31a",
+						"exec": [
+							"let resp = pm.response.stream.toJSON().data",
+							"let buff = new Buffer(resp, 'base64');",
+							"",
+							"let dataJson = JSON.parse(buff.toString());",
+							"",
+							"pm.environment.set(\"supplierPublicId\", dataJson.publicId);",
+							"pm.environment.set(\"ownerPublicId\", dataJson.owner.publicId);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{accessToken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"Distribuidora B\",\n  \"cnpj\": \"11.572.592/0002-55\",\n  \"phoneNumber\": \"(11)987654123\",\n  \"zipCode\": \"04146-090\",\n  \"address\": \"Avenida Ibirapuera\",\n  \"number\": \"144\",\n  \"complement\": \"Cj 65\",\n  \"neighborhood\": \"Ibira\",\n  \"city\": \"São Paulo\",\n  \"state\": \"SP\",\n  \"owner\": {\n    \"name\": \"João Dias\",\n    \"email\": \"jsd@email.com\",\n    \"phoneNumber\": \"(11)222233334\"\n  }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/suppliers",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"suppliers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PutSupplier",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{accessToken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"publicId\": \"{{supplierPublicId}}\",\n  \"name\": \"Distribuidora Alterada De Novo\",\n  \"cnpj\": \"11.572.592/0002-54\",\n  \"phoneNumber\": \"(11)987654123\",\n  \"zipCode\": \"04146-090\",\n  \"address\": \"Avenida Rep. do Líbano\",\n  \"number\": \"145\",\n  \"complement\": \"Cj 65\",\n  \"neighborhood\": \"Ibira\",\n  \"city\": \"São Paulo\",\n  \"state\": \"SP\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/suppliers",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"suppliers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetSupplier",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "b8ac5905-a8ae-41e2-9326-0aae1dba7546",
+						"exec": [
+							"let resp = pm.response.stream.toJSON().data",
+							"let buff = new Buffer(resp, 'base64');",
+							"",
+							"let dataJson = JSON.parse(buff.toString());",
+							"",
+							"pm.environment.set(\"supplierPublicId\", dataJson.publicId);",
+							"pm.environment.set(\"ownerPublicId\", dataJson.owner.publicId);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{accessToken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/suppliers/{{supplierPublicId}}",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"suppliers",
+						"{{supplierPublicId}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetSuppliers",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "8688cb7c-3c8f-4ece-9bce-af055c82012c",
+						"exec": [
+							"let resp = pm.response.stream.toJSON().data",
+							"let buff = new Buffer(resp, 'base64');",
+							"",
+							"let dataJson = JSON.parse(buff.toString());",
+							"",
+							"pm.environment.set(\"supplierPublicId\", dataJson[0].publicId);",
+							"pm.environment.set(\"ownerPublicId\", dataJson[0].owner.publicId)"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{accessToken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/suppliers",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"suppliers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteSupplier",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{accessToken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/suppliers/{{supplierPublicId}}",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"suppliers",
+						"{{supplierPublicId}}"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "53ae683e-590b-4c36-be49-15bfbbaf1373",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "0dd322df-44e9-4889-b19d-f00afcd38988",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
