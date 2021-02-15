@@ -20,7 +20,7 @@
 - #### Create a SUPPLIER_DETAIL page:
 <p align="center"><img src="https://user-images.githubusercontent.com/22858307/107527252-6a255f80-6b97-11eb-9dfe-a0ba2f65aa62.png" data-canonical-src="https://user-images.githubusercontent.com/22858307/107527252-6a255f80-6b97-11eb-9dfe-a0ba2f65aa62.png" width="515" /></p>
 
-    - Make a POST request to get supplier details.
+    - Make a GET request to get supplier details.
     - Create an update button to make a PUT request and update the current supplier.
     - This page must be accessible only to authenticated users
 
