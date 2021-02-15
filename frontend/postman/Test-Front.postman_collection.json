@@ -1,0 +1,298 @@
+{
+	"info": {
+		"_postman_id": "57315db5-cc74-44e6-b04f-54226d578817",
+		"name": "Test-Front",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Token",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"let resp = pm.response.stream.toJSON().data",
+							"let buff = new Buffer(resp, 'base64');",
+							"",
+							"let dataJson = JSON.parse(buff.toString());",
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.environment.set(\"accessToken\", dataJson.access_token);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "dd3ed90e-667f-4248-a671-9266261dba5b",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "poupachef-test",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "grant_type",
+							"value": "password",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "teste@teste.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "poupachef",
+							"type": "text"
+						},
+						{
+							"key": "scope",
+							"value": "web",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{baseUrl}}/oauth/token",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"oauth",
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Suppliers",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"let resp = pm.response.stream.toJSON().data",
+							"let buff = new Buffer(resp, 'base64');",
+							"",
+							"let dataJson = JSON.parse(buff.toString());",
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.environment.set(\"supplierPublicId\", dataJson[0].publicId);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{accessToken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/suppliers",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"suppliers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Supplier By Id",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"let resp = pm.response.stream.toJSON().data",
+							"let buff = new Buffer(resp, 'base64');",
+							"",
+							"let dataJson = JSON.parse(buff.toString());",
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.environment.set(\"supplierPublicId\", dataJson.publicId);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{accessToken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/suppliers/{{supplierPublicId}}",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"suppliers",
+						"{{supplierPublicId}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post Supplier",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"let resp = pm.response.stream.toJSON().data",
+							"let buff = new Buffer(resp, 'base64');",
+							"",
+							"let dataJson = JSON.parse(buff.toString());",
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.environment.set(\"supplierPublicId\", dataJson.publicId);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{accessToken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"Distribuidora Novo\",\n  \"cnpj\": \"01.254.454/0001-14\",\n  \"phoneNumber\": \"5511985412512\",\n  \"zipCode\": \"128457112\",\n  \"address\": \"Avenida República do Líbano\",\n  \"number\": \"12\",\n  \"complement\": \"Cj 12\",\n  \"neighborhood\": \"Moema\",\n  \"city\": \"São Paulo\",\n  \"state\": \"SP\",\n  \"ownerName\": \"Mark\",\n  \"ownerEmail\": \"mk@email.com\",\n  \"ownerPhoneNumber\": \"5511912365412\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/suppliers",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"suppliers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Put Supplier",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{accessToken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"publicId\": \"{{supplierPublicId}}\",\n  \"name\": \"Distribuidora Alterado 1\",\n  \"cnpj\": \"01.254.454/0001-93\",\n  \"phoneNumber\": \"5511985412574\",\n  \"zipCode\": \"128457174\",\n  \"address\": \"Avenida Ceci\",\n  \"number\": \"74\",\n  \"complement\": \"Cj 74\",\n  \"neighborhood\": \"Mirandópolis\",\n  \"city\": \"São Paulo\",\n  \"state\": \"SP\",\n  \"ownerName\": \"Carl\",\n  \"ownerEmail\": \"ca@email.com\",\n  \"ownerPhoneNumber\": \"5511912365474\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/suppliers",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"suppliers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Supplier",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{accessToken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/suppliers/{{supplierPublicId}}",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"suppliers",
+						"{{supplierPublicId}}"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
