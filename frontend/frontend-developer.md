@@ -2,6 +2,7 @@
 
 ### Instructions
 - #### Import Postman files available in this folder for a list of all available endpoints.
+- #### To avoid problems with tools versions, we recommended that you use an online version of Postman (https://web.postman.co/home). Import folder with postman files to set your environment and collection to access endpoints.
 - #### Create a React project.
 - #### Setup routing. (you application must have a spa behavior)
 - #### Create a LOGIN page:
