@@ -1,4 +1,4 @@
-# Poupachef Frontend Challenge
+# Cayena Frontend Challenge
 
 ### Instructions
 - #### Import Postman files available in this folder for a list of all available endpoints.
