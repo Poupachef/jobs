@@ -1,6 +1,6 @@
-# Poupachef
+# Cayena
 
-> Here at Poupachef we are designing the future of food procurement - and
+> Here at Cayena we are designing the future of food procurement - and
 we strongly believe that this task goes by empowering small restaurant
 owners and scanning the current food service environment.
 
@@ -17,8 +17,8 @@ and willing to join our journey.
  - Competitive salary
  - Possibility of variable $ or stock options based on performance
  - Be an early employee, with huge freedom, in a promising startup
- - Contact with recent technologies such as *serverless*, *golang*, 
- *kotlin* and *react*
+ - Contact with technologies such as "aws", *java with spring and quarkus* and *react*
+ and and excellent microservices architecture.
 
 
 ## Openings
@@ -26,12 +26,13 @@ and willing to join our journey.
 For more information click on the position you're interested. And read
 the next section to know how to return your solution to us.
 
-- [Front-end developer](frontend/frontend-developer.md)
+- [Front End developer](frontend/frontend-developer.md)
+- [Back End developer](back-end-developer.md)
 
 
 ### How to deliver the solution
 
-- Host your code in a public repository on GitHub and send the link by email to [devs](mailto:devs@poupachef.com.br).
+- Host your code in a public repository on GitHub and send the link by email to [devs](mailto:antonio@acyena.com).
 
 - You can send doubts/suggestions to the email before returning the final
 solution.
