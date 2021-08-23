@@ -1,12 +1,12 @@
 ### Data scientist
 
-The data scientist position involves, but is not limited to, upgrading our precious pricing algorithm - written in Python 3.7 - and our price mining and import routines, such as our serverless function that loads new data into the database. The job also includes creating and monitoring web crawlers that collect the information of food ingredient’s public prices, which will then be used to feed Poupachef’s internal pricing algorithm.
+The data scientist position involves, but is not limited to, upgrading our precious pricing algorithm - written in Python 3.7 - and our price mining and import routines, such as our serverless function that loads new data into the database. The job also includes creating and monitoring web crawlers that collect the information of food ingredient’s public prices, which will then be used to feed Cayena’s internal pricing algorithm.
 
 **Requirements:** Python
 
 ## Coding tests
 
-Choose 2 of the following 3 problems and send the answers by email to [devs](mailto:devs@poupachef.com.br). The tests can be  solved in any programming language.
+Choose 2 of the following 3 problems and send the answers by email to [devs](mailto:antonio@cayena.com). The tests can be  solved in any programming language.
 
 ### 1
 
