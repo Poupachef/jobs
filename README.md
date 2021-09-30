@@ -28,6 +28,7 @@ the next section to know how to return your solution to us.
 
 - [Front End developer](frontend/frontend-developer.md)
 - [Back End developer](back-end-developer.md)
+- [Quality Assurance Engineer](qa/Test_QA.md)
 
 
 ### How to deliver the solution
