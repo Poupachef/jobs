@@ -2,7 +2,7 @@
 
 ## Job description - QA Engineer
 We're looking for someone to help us develop and maintain automated tests on ours systems.
-As a quality assurance engineer, you will work with our team of developers (back end, front end, DevOps) to build the best products to our clients.
+As a quality assurance engineer, you will work with our team of developers (back end, front end, devops) to build the best products to our clients.
 
 We expect that you help us to create a quality culture on our company. You need to be able to specify and implement cenarios of automated tests, insert this scenarios in an Continuous Integration and Continuous Inspection process and help us to keep a safe deploy in production environment. We are talking about integration tests in web applications, Android and Ios apps.
 
@@ -14,6 +14,7 @@ We expect that you help us to create a quality culture on our company. You need 
 ## Nice to have
 - Previous experience with:
     - AWS Cloud Environment;
+    - GitHub;
     - Docker Containers;
     - Monitoring and tests tools;
     - Web, Mobile and API test.
