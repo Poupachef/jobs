@@ -1,4 +1,4 @@
-# Poupachef
+# Cayena
 
 ## Job description - QA Engineer
 We're looking for someone to help us develop and maintain automated tests on ours systems.

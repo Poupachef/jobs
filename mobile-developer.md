@@ -1,6 +1,6 @@
 ### Mobile developer
 
-As a mobile developer at Poupachef, you will work with the team of developers to build our Android and iOS apps. We are looking for someone who is interested in not only the development itself, but everything that makes up the app, from automation scripts and testing to UX/UI and analytics.
+As a mobile developer at Cayena, you will work with the team of developers to build our Android and iOS apps. We are looking for someone who is interested in not only the development itself, but everything that makes up the app, from automation scripts and testing to UX/UI and analytics.
 
 **Requirements:**
 - Extensive knowledge in HTML, CSS and vanilla JS;
@@ -18,7 +18,7 @@ As a mobile developer at Poupachef, you will work with the team of developers to
 
 ## Coding tests
 
-Choose 2 of the following 3 problems and send the answers by email to [devs](mailto:devs@poupachef.com.br). The tests can be  solved in any programming language.
+Choose 2 of the following 3 problems and send the answers by email to [antonio@cayena.com](mailto:antonio@cayena.com). The tests can be  solved in any programming language.
 
 ### 1
 
