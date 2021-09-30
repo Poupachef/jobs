@@ -49,4 +49,4 @@ We expect that you help us to create a quality culture on our company. You need 
 - All your tests and new end points will be evaluated.
 - How you organize and write your tests.
 
-If you have any questions, please send an email to [ac@poupachef.com.br](mailto:ac@poupachef.com.br).
+If you have any questions, please send an email to [antonio@cayena.com](mailto:antonio@cayena.com).
