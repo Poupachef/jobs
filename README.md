@@ -1,4 +1,4 @@
-# Cayena
+#  Cayena
 
 > Here at Cayena we are designing the future of food procurement - and
 we strongly believe that this task goes by empowering small restaurant
