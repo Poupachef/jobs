@@ -16,7 +16,7 @@ To attend to this position the test below.
 
 ### 2 - Java
 
-You need to create a **Rest API with Java version 1.8, Maven, Spring and MySql** to store a list of products from different suppliers to be used in our app. 
+You need to create a **Rest API with Java version 11, Maven, Spring and MySql** to store a list of products from different suppliers to be used in our app. 
 
 The supplier Entity must have this fields:
 
