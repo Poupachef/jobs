@@ -48,6 +48,7 @@ and the API must have a complete CRUD of products with the following resources:
 
 You must delivery the **database scritp**, the API source code and a way to use this API, that **could be a Postman Collection or a sequence of Curl commands**.
 And create a README.md file to explain how to install and use the API.
+And to delivery the test you need to create a GitHub Repository and send us the link to access your implementation.
 
 ### Good luck
 
