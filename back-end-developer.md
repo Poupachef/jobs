@@ -46,7 +46,7 @@ and the API must have a complete CRUD of products with the following resources:
 	* An endpoint to delete a product;
 	- An endpoint to increase or decrease the quantity stock
 
-You must delivery the database scritp, the API source code and a way to use this API, that could be a Postman Collection or a sequence of Curl commands.
+You must delivery the **database scritp**, the API source code and a way to use this API, that **could be a Postman Collection or a sequence of Curl commands**.
 And create a README.md file to explain how to install and use the API.
 
 ### Good luck
