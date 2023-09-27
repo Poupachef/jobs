@@ -17,7 +17,7 @@ and willing to join our journey.
  - Competitive salary
  - Possibility of variable $ or stock options based on performance
  - Be an early employee, with huge freedom, in a promising startup
- - Contact with technologies such as "aws", *java with spring and quarkus* and *react*
+ - Contact with technologies such as "aws","lambdas", *java with spring and quarkus* and *react*
  and and excellent microservices architecture.
 
 
